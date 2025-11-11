@@ -1,0 +1,22 @@
+{
+  "name": "kronograph-creditcard-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright test framework for KronoGraph Credit Card Fraud Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:safari": "npx playwright test --project=webkit",
+    "test:report": "npx playwright show-report",
+    "install:browsers": "npx playwright install"
+  },
+  "author": "Pranita",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
