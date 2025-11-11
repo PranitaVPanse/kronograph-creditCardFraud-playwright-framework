@@ -1,137 +1,270 @@
-# KronoGraph Credit Card Fraud Demo - Playwright Test Framework# KronoGraph Credit Card Fraud Demo - Playwright Test Framework
+# KronoGraph Credit Card Fraud Demo - Playwright Test Framework# KronoGraph Credit Card Fraud Demo - Playwright Test Framework# KronoGraph Credit Card Fraud Demo - Playwright Test Framework
 
 
 
-This repository contains a **clean and minimal** Playwright test framework for testing the KronoGraph Credit Card Fraud Detection demo website.This repository contains a **clean and minimal** Playwright test framework for testing the KronoGraph Credit Card Fraud Detection demo website.
+This repository contains a **clean and minimal** Playwright test framework for testing the KronoGraph Credit Card Fraud Detection demo website.
 
 
+
+🔗 **Demo Website**: [KronoGraph Credit Card Fraud Detection](https://cambridge-intelligence.com/keylines/demos/credit-card-fraud-neo4j/)  This repository contains a **clean and minimal** Playwright test framework for testing the KronoGraph Credit Card Fraud Detection demo website.This repository contains a **clean and minimal** Playwright test framework for testing the KronoGraph Credit Card Fraud Detection demo website.
+
+📊 **About**: Cambridge Intelligence's KronoGraph Credit Card Fraud Detection demo website showcases interactive graph visualization for fraud detection analysis.
+
+
+
+## 🏗️ Project Structure
 
 🔗 **Demo Website**: [KronoGraph Credit Card Fraud Detection](https://cambridge-intelligence.com/keylines/demos/credit-card-fraud-neo4j/)  🔗 **Demo Website**: [KronoGraph Credit Card Fraud Detection](https://cambridge-intelligence.com/keylines/demos/credit-card-fraud-neo4j/)  
 
-📊 **About**: Cambridge Intelligence's KronoGraph Credit Card Fraud Detection demo website showcases interactive graph visualization for fraud detection analysis.📊 **About**: Cambridge Intelligence's KronoGraph Credit Card Fraud Detection demo website showcases interactive graph visualization for fraud detection analysis.
+```
 
+KronoGraph_Credit Card Fraud/📊 **About**: Cambridge Intelligence's KronoGraph Credit Card Fraud Detection demo website showcases interactive graph visualization for fraud detection analysis.📊 **About**: Cambridge Intelligence's KronoGraph Credit Card Fraud Detection demo website showcases interactive graph visualization for fraud detection analysis.
 
+├── tests/
 
-## 🏗️ Project Structure## 🏗️ Project Structure
+│   ├── CreditCardDemoPageTests/
 
+│   │   ├── CreditCardDemoPage.spec.js      # Basic page load test
 
+│   │   └── InteractiveFiltering.spec.js    # Interactive checkbox filtering tests## 🏗️ Project Structure## 🏗️ Project Structure
 
-``````
+│   ├── pages/
 
-KronoGraph_Credit Card Fraud/KronoGraph_Credit Card Fraud/
+│   │   ├── BasePage.js                     # Minimal base class (navigate, screenshot)
 
-├── tests/├── tests/
+│   │   └── CreditCardDemoPage.js           # Page object with locators & methods
+
+│   └── fixtures.js                         # Page object fixtures for scaling``````
+
+├── test-results/                           # Auto-generated screenshots & reports
+
+├── package.json                            # Project dependenciesKronoGraph_Credit Card Fraud/KronoGraph_Credit Card Fraud/
+
+├── playwright.config.js                    # Clean Playwright configuration
+
+└── README.md                               # This file├── tests/├── tests/
+
+```
 
 │   ├── CreditCardDemoPageTests/│   ├── CreditCardDemoPageTests/
 
+## 🚀 Getting Started
+
 │   │   ├── CreditCardDemoPage.spec.js      # Basic page load test│   │   ├── CreditCardDemoPage.spec.js      # Basic page load test
+
+### Prerequisites
 
 │   │   └── InteractiveFiltering.spec.js    # Interactive checkbox filtering tests│   │   └── InteractiveFiltering.spec.js    # Interactive checkbox filtering tests
 
-│   ├── pages/│   ├── pages/
+- Node.js (version 18 or higher)
 
-│   │   ├── BasePage.js                     # Minimal base class (navigate, screenshot)│   │   ├── BasePage.js                     # Minimal base class (navigate, screenshot)
+- npm or yarn package manager│   ├── pages/│   ├── pages/
 
-│   │   └── CreditCardDemoPage.js           # Page object with locators & methods│   │   └── CreditCardDemoPage.js           # Page object with locators & methods
 
-│   └── fixtures.js                         # Page object fixtures for scaling│   └── fixtures.js                         # Page object fixtures for scaling
+
+### Installation│   │   ├── BasePage.js                     # Minimal base class (navigate, screenshot)│   │   ├── BasePage.js                     # Minimal base class (navigate, screenshot)
+
+
+
+1. **Navigate to the project directory:**│   │   └── CreditCardDemoPage.js           # Page object with locators & methods│   │   └── CreditCardDemoPage.js           # Page object with locators & methods
+
+   ```bash
+
+   cd "d:\\Pranita\\Testing\\KronoGraph_Credit Card Fraud"│   └── fixtures.js                         # Page object fixtures for scaling│   └── fixtures.js                         # Page object fixtures for scaling
+
+   ```
 
 ├── test-results/                           # Auto-generated screenshots & reports├── test-results/                           # Auto-generated screenshots & reports
 
-├── package.json                            # Project dependencies├── package.json                            # Project dependencies
+2. **Install dependencies:**
 
-├── playwright.config.js                    # Clean Playwright configuration├── playwright.config.js                    # Clean Playwright configuration
+   ```bash├── package.json                            # Project dependencies├── package.json                            # Project dependencies
 
-└── README.md                               # This file└── README.md                               # This file
+   npm install
 
-``````
+   ```├── playwright.config.js                    # Clean Playwright configuration├── playwright.config.js                    # Clean Playwright configuration
 
 
+
+3. **Install Playwright browsers:**└── README.md                               # This file└── README.md                               # This file
+
+   ```bash
+
+   npm run install:browsers``````
+
+   ```
+
+
+
+## 🧪 Running Tests
 
 ## 🚀 Getting Started## 🚀 Getting Started
 
+### Run the Test
+
+```bash
+
+npm test
+
+```### Prerequisites### Prerequisites
 
 
-### Prerequisites### Prerequisites
 
+### Run Test in Headed Mode (visible browser)
 
+```bash
 
-- Node.js (version 18 or higher)- Node.js (version 18 or higher)
+npm run test:headed- Node.js (version 18 or higher)- Node.js (version 18 or higher)
+
+```
 
 - npm or yarn package manager- npm or yarn package manager
 
+### View Test Report
 
+```bash
 
-### Installation### Installation
+npm run test:report
 
-
-
-1. **Navigate to the project directory:**1. **Navigate to the project directory:**
-
-   ```bash   ```bash
-
-   cd "d:\\Pranita\\Testing\\KronoGraph_Credit Card Fraud"   cd "d:\\Pranita\\Testing\\KronoGraph_Credit Card Fraud"
-
-   ```   ```
+```### Installation### Installation
 
 
 
-2. **Install dependencies:**2. **Install dependencies:**
-
-   ```bash   ```bash
-
-   npm install   npm install
-
-   ```   ```
+## 📝 Test Overview
 
 
 
-3. **Install Playwright browsers:**3. **Install Playwright browsers:**
+### 1. Basic Page Load Test: `CreditCardDemoPage.spec.js`1. **Navigate to the project directory:**1. **Navigate to the project directory:**
+
+**"should load the credit card demo page successfully"**
 
    ```bash   ```bash
+
+This test performs:
+
+- **Navigate to Demo**: Opens the KronoGraph credit card fraud demo page   cd "d:\\Pranita\\Testing\\KronoGraph_Credit Card Fraud"   cd "d:\\Pranita\\Testing\\KronoGraph_Credit Card Fraud"
+
+- **Verify Title**: Validates the page title contains "KronoGraph"  
+
+- **Verify Graph**: Ensures the graph visualization is visible   ```   ```
+
+- **Auto Screenshot**: Playwright automatically captures screenshots
+
+
+
+### 2. Interactive Filtering Tests: `InteractiveFiltering.spec.js`
+
+**"should filter transactions by disputed/undisputed status"**2. **Install dependencies:**2. **Install dependencies:**
+
+
+
+These tests perform:   ```bash   ```bash
+
+- **Checkbox Interaction**: Test disputed/undisputed transaction filtering
+
+- **Visual Verification**: Uses `toHaveScreenshot()` for automatic visual regression testing   npm install   npm install
+
+- **State Validation**: Verifies checkbox states and graph updates
+
+- **Cross-browser Testing**: Runs on Chrome and Firefox with visual snapshots   ```   ```
+
+
+
+## 🎯 Framework Architecture
+
+
+
+### Clean Page Object Model3. **Install Playwright browsers:**3. **Install Playwright browsers:**
+
+- **BasePage**: Essential methods for navigation and popup handling
+
+- **CreditCardDemoPage**: Locators and interactive methods for checkbox filtering   ```bash   ```bash
+
+- **Modern Playwright**: Leverages auto-wait capabilities and visual testing
 
    npm run install:browsers   npm run install:browsers
 
-   ```   ```
+### Locator Pattern
+
+```javascript   ```   ```
+
+// Clean locator declarations
+
+disputedCheckboxLabelLocator;
+
+undisputedCheckboxLabelLocator;
+
+disputedCheckboxInputLocator;## 🧪 Running Tests## 🧪 Running Tests
 
 
 
-## 🧪 Running Tests## 🧪 Running Tests
+// Constructor initialization
+
+this.disputedCheckboxLabelLocator = this.page.locator('label[for="disputed"]');
+
+this.undisputedCheckboxLabelLocator = this.page.locator('label[for="undisputed"]');### Run the Test### Run the Test
 
 
 
-### Run the Test### Run the Test
+// Interactive methods```bash```bash
 
-```bash```bash
+async toggleDisputed() {
 
-npm testnpm test
+    await this.disputedCheckboxLabelLocator.click();npm testnpm test
 
-``````
-
-
-
-### Run Test in Headed Mode (visible browser)### Run Test in Headed Mode (visible browser)
-
-```bash```bash
-
-npm run test:headednpm run test:headed
-
-``````
-
-
-
-### View Test Report### View Test Report
-
-```bash```bash
-
-npm run test:reportnpm run test:report
+}
 
 ``````
 
+async isDisputedChecked() {
 
+    return await this.disputedCheckboxInputLocator.isChecked();
+
+}
+
+```### Run Test in Headed Mode (visible browser)### Run Test in Headed Mode (visible browser)
+
+
+
+## 📊 Configuration```bash```bash
+
+
+
+### Playwright Configuration (`playwright.config.js`)npm run test:headednpm run test:headed
+
+- **Base URL**: Points to KronoGraph demo site
+
+- **Browsers**: Chrome, Firefox with optimized viewports (1280x720)``````
+
+- **Screenshots**: Automatic visual testing with `toHaveScreenshot()`
+
+- **HTML Reporter**: Clean visual reporting with embedded screenshots
+
+
+
+## 📸 Screenshots & Visual Testing### View Test Report### View Test Report
+
+
+
+- **Automatic Visual Testing**: Uses `toHaveScreenshot()` for regression detection```bash```bash
+
+- **Cross-browser Snapshots**: Visual baselines for Chrome and Firefox
+
+- **Location**: `tests/CreditCardDemoPageTests/InteractiveFiltering.spec.js-snapshots/`npm run test:reportnpm run test:report
+
+- **Auto-generated**: Screenshots saved in `test-results/` folder
+
+``````
+
+---
+
+
+
+**Happy Testing! 🎭**
 
 ## 📝 Test Overview## 📝 Test Overview
 
+This framework focuses on clean, maintainable test automation for KronoGraph Credit Card Fraud Detection demo.
 
 
 ### 1. Basic Page Load Test: `CreditCardDemoPage.spec.js`### 1. Basic Page Load Test: `CreditCardDemoPage.spec.js`
